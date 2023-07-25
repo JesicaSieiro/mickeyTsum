@@ -7,15 +7,40 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <svg width="800" height="600">
+    <svg width="800" height="600" viewBox="0 -150 800 800">
+        <!-- TEXT -->
+        <defs>
+            <path id="txtMickey" d="M250,0 Q620,-70 600,160"/>
+        </defs>
+        <text font-family="Disney" font-size="82" fill="#cb3234" >
+            <textPath xlink:href="#txtMickey">
+                MICKEY
+            </textPath>
+        </text>
+        <!-- CLOUD -->
+        <ellipse  cx="750" cy="30" rx="58" ry="45"  fill="#FFF"/>
+        <ellipse  cx="820" cy="7" rx="58" ry="70"  fill="#FFF"/>
+        <ellipse  cx="900" cy="7" rx="58" ry="70"  fill="#FFF"/>
+        <!-- TREE TRUNK -->
+        <line x1="-50" y1="200" x2="-20" y2="600" stroke="#804000" stroke-width="35" stroke-linecap="butt"/>
+        <!-- CANOPY OF TREE -->
+        <polygon  points="-50,80 -140,310 50,290" fill="#268E00" />
+        <!-- <polyline  points="-50,80 -140,310 50,290 -50,80" fill="#268E00" fill="#268E00" stroke-width="3" stroke-linecap="round"/> -->
+        <!-- PARK -->
+        <ellipse  cx="400" cy="720" rx="700" ry="400"  fill="#268E00"/>
+        <!-- EARS -->
         <circle cx="200" cy="200" r="100" stroke="black" stroke-width="6" fill="black"/>
         <circle cx="600" cy="200" r="100" stroke="black" stroke-width="6" fill="black"/>
+        <!-- HEAD -->
         <ellipse  cx="400" cy="350" rx="230" ry="200" stroke="black" stroke-width="6" fill="black"/>
+        <!-- FACE -->
         <ellipse  cx="480" cy="340" rx="105" ry="135"  fill="#eeb36d"/>
         <ellipse  cx="320" cy="340" rx="105" ry="135"  fill="#eeb36d"/>
         <ellipse  cx="400" cy="445" rx="200" ry="110"  fill="#eeb36d"/>
+        <!-- EYES -->
         <ellipse  cx="320" cy="370" rx="18" ry="23"  fill="black"/>
         <ellipse  cx="480" cy="370" rx="18" ry="23"  fill="black"/>
+        <!-- NOSE -->
         <ellipse  cx="400" cy="430" rx="25" ry="15"  fill="black"/>
     </svg>
 </body>

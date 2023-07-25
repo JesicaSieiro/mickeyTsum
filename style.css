@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Disney';
+    src: url('./assets/waltograph-disney/waltographUI.ttf');
+}
 svg{
     border:2px solid #000;
+    background: rgb(111, 215, 250);
 }
